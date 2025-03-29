@@ -1,5 +1,6 @@
 # Hyper Teknoloji Case Uygulaması
 
+Canlı olarak görüntüleyin : [https://hypercase.netlify.app/](https://hypercase.netlify.app/)
 Sade ve modern tasarımı ve duyarlı, akıcı kullanıcı deneyimine sahip bir arayüz geliştirmesi. Farklı cihazlarda sorunsuz bir alışveriş deneyimi sunar.
 
 **Özellikler**
