@@ -1,0 +1,18 @@
+/* Banner Slider */
+.bannerSplide .splide__pagination {
+    bottom: -2rem;
+    gap: .5rem;
+}
+
+.bannerSplide  .splide__pagination__page{
+    opacity: 20% !important;
+    background-color: #3B82F6;
+}
+
+.bannerSplide .splide__pagination__page.is-active {
+    box-shadow: 0 0 5px 0 #3B82F6;
+    background-color: #3B82F6;
+    opacity: 100% !important;
+    border: 0;
+    outline: 0;
+}

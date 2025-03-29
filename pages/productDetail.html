@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HyperTech Case</title>
+    <meta name="description" content="HyperTech Anasayfa Tasarımı">
+    <link rel="icon" type="image/png" href="/assets/svg/icon.svg">
+
+
+    <link rel="stylesheet" href="/assets/css/mainStyle.css">
+    <link rel="stylesheet" href="/assets/css/components/sliderControl.css">
+    <link rel="stylesheet" href="/assets/css/tailwindOutput.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/i18next@21.6.0/i18next.min.js"></script>
+
+</head>
+
+<body>
+
+    <header>
+        <div
+            class="py-2 text-white bg-gradient-to-br from-blue-500 to-blue-700 dark:from-gray-500 dark:to-gray-700 dark:text-white">
+            <div class="container flex flex-col items-center justify-between gap-4 mx-auto lg:flex-row lg:gap-0">
+                <div class="flex flex-row items-center gap-2 text-sm italic font-light duration-1000">
+                    <div class="flex flex-row items-center gap-1">
+                        <div class="animate-pulse">|</div>
+                        <div class="">|</div>
+                        <div class="animate-pulse">|</div>
+                        <div class="">|</div>
+                        <div class="animate-pulse">|</div>
+                    </div>
+                    <div data-i18n="heradim"> Her Adımda Yanınızdayız</div>
+                </div>
+                <div class="flex flex-col gap-6 text-xs lg:flex-row">
+                    <div class="flex flex-row items-center justify-center gap-6">
+                        <a class="duration-300 cursor-pointer hover:opacity-75" target="_blank"
+                            href="https://www.hyperteknoloji.com/cozum-merkezi" data-i18n="cozum_merkezi">Çözüm
+                            Merkezi</a>
+                        <a class="duration-300 cursor-pointer hover:opacity-75" target="_blank"
+                            href="https://www.hyperteknoloji.com/haberler">Hyper Blog</a>
+                    </div>
+                    <div class="flex flex-row items-center justify-center gap-6">
+                        <div class="flex items-center gap-2 cursor-pointer" id="themeButton">
+                            <img class="w-4 h-4" id="sun" src="/assets/svg/sun.svg" alt="">
+                            <img class="hidden w-4 h-4" id="moon" src="/assets/svg/moon.svg" alt="">
+                            <div id="themeText">Neon</div>
+                        </div>
+                        <div>
+                            <div class="relative flex items-center gap-2 group">
+                                <div class="flex items-center gap-2 cursor-pointer">
+                                    <img class="w-4 h-4" src="/assets/svg/tr.svg" id="lang_svg" alt="">
+                                    <div data-i18n="turk_change">Dil</div>
+                                    <div class="">
+                                        <i class="fa-solid fa-caret-down"></i>
+                                    </div>
+                                </div>
+                                <div class="group-hover:block hidden absolute w-[10rem] -right-2 top-3 ">
+                                    <div
+                                        class="flex flex-col mt-4 overflow-hidden text-xs text-black bg-white border border-gray-200 rounded-md">
+                                        <button onclick="changeLanguage('tr')"
+                                            class="relative flex flex-row items-center gap-2 p-3 border-b border-gray-200 hover:bg-blue-50 hover:cursor-pointer group/submenu">
+                                            <img class="w-4 h-4 group-hover/submenu:scale-[110%] duration-200"
+                                                src="/assets/svg/tr.svg" alt="">
+                                            <div data-i18n="turk_lang">Türkçe</div>
+                                            <div
+                                                class="absolute top-0 bottom-0 flex items-center justify-center invisible duration-500 rotate-90 translate-x-0 group-hover/submenu:visible group-hover/submenu:-translate-x-2 right-2">
+                                                <i class="text-blue-500 fa-solid fa-caret-down"></i>
+                                            </div>
+                                        </button>
+                                        <button onclick="changeLanguage('en')"
+                                            class="relative flex flex-row items-center gap-2 p-3 border-b border-gray-200 hover:bg-blue-50 hover:cursor-pointer group/submenu">
+                                            <img class="w-4 h-4 group-hover/submenu:scale-[110%] duration-200"
+                                                src="/assets/svg/en.svg" alt="">
+                                            <div data-i18n="en_lang">İngilizce</div>
+                                            <div
+                                                class="absolute top-0 bottom-0 flex items-center justify-center invisible duration-500 rotate-90 translate-x-0 group-hover/submenu:visible group-hover/submenu:-translate-x-2 right-2">
+                                                <i class="text-blue-500 fa-solid fa-caret-down"></i>
+                                            </div>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <nav class="py-2 bg-white shadow-sm dark:bg-gray-900 dark:text-white">
+            <div class="container flex flex-col items-center justify-between mx-auto lg:flex-row">
+                <div class="flex flex-col items-center gap-6 py-2 text-sm font-medium md:flex-row md:gap-16">
+                    <a class="" href="/">
+                        <img class="h-8 mb-1" src="/assets/svg/Logo.svg" alt="">
+                    </a>
+                    <div class="flex flex-row gap-8">
+                        <a href="/" class="duration-300 cursor-pointer hover:text-blue-500"
+                            data-i18n="nav_anasayfa">Anasayfa</a>
+                        <a href="/pages/product.html" class="duration-300 cursor-pointer hover:text-blue-500"
+                            data-i18n="nav_envanter">Envanterimiz</a>
+                        <a class="duration-300 cursor-pointer hover:text-blue-500" target="_blank"
+                            href="https://www.hyperteknoloji.com/iletisim" data-i18n="nav_iletisim">İletişim</a>
+                    </div>
+                </div>
+                <div class="flex flex-row items-center gap-4 text-sm">
+                    <div class="opacity-50">Web Case</div>
+                    <a href="https://www.linkedin.com/in/adnan-sevki-kasikci/" target="_blank"
+                        class="flex flex-row gap-2 font-medium text-blue-500 cursor-pointer">
+                        <div><i class="mt-1 fab fa-linkedin"></i></div>
+                        <div>By Adnan Şevki Kaşıkçı</div>
+                    </a>
+                    <a href="/pages/basket.html">
+                        <i class="fa-solid fa-basket-shopping"></i>
+                        <span id="basketLength">0</span>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="dark:bg-gray-900 dark:text-white">
+        <section class="container py-20 mx-auto">
+            <article class="cards"></article>
+        </section>
+    </section>
+
+    <footer>
+        <section class="dark:bg-gray-900 dark:text-white">
+            <article class="container mx-auto">
+                <div data-i18n="section_title03"
+                    class="w-4/6 py-5 mx-auto text-lg text-center text-gray-700 lg:w-2/6 font-extralight dark:text-white">
+                    Hyper
+                    Teknoloji,
+                    dijital ürünler
+                    başta
+                    olmak
+                    üzere
+                    E-Ticaret
+                    sektörüne özel
+                    2006
+                    Yılından bu yana
+                    yazılım ve pazarlama çözümleri sunmaktadır.</div>
+                <div
+                    class="w-full h-[.375rem] bg-gradient-to-r  to-[rgba(0,76,255,0)] via-[rgba(0,76,255,0.9)] from-[rgba(0,76,255,0)] mt-20 ">
+                </div>
+            </article>
+            <article
+                class="pt-24 pb-6 bg-gradient-to-t to-[rgba(237, 237, 243,0.9)] from-[rgba(0,76,255,0.2)] px-5 lg:px-0">
+                <div class="container mx-auto">
+                    <div class="flex flex-col w-full gap-6 md:flex-row lg:gap-0">
+                        <div class="lg:w-2/12">
+                            <div class="font-semibold underline" data-i18n="footer_title01">Kurumsal</div>
+                            <div class="flex flex-col gap-3 mt-6 text-xs text-gray-600 dark:text-gray-400">
+                                <div class="duration-300 cursor-pointer hover:text-blue-500"
+                                    data-i18n="footer_subtitle01">Hakkımızda</div>
+                                <div class="duration-300 cursor-pointer hover:text-blue-500"
+                                    data-i18n="footer_subtitle02">E-Ticaret Paketleri</div>
+                                <div class="duration-300 cursor-pointer hover:text-blue-500"
+                                    data-i18n="footer_subtitle03">Uygulama Mağazası</div>
+                                <div class="duration-300 cursor-pointer hover:text-blue-500"
+                                    data-i18n="footer_subtitle04">Temalar</div>
+                                <div class="duration-300 cursor-pointer hover:text-blue-500"
+                                    data-i18n="footer_subtitle05">Referanslar</div>
+                                <div class="duration-300 cursor-pointer hover:text-blue-500"
+                                    data-i18n="footer_subtitle06">Demo Talebi</div>
+                                <div class="duration-300 cursor-pointer hover:text-blue-500">Blog</div>
+                            </div>
+                        </div>
+                        <div class="lg:w-2/12">
+                            <div class="font-semibold underline" data-i18n="footer_title02">Sözleşmeler</div>
+                            <div class="flex flex-col gap-3 mt-6 text-xs text-gray-600 dark:text-gray-400">
+                                <div class="duration-300 cursor-pointer hover:text-blue-500"
+                                    data-i18n="footer_subtitle07">Aydınlatma Metni</div>
+                                <div class="duration-300 cursor-pointer hover:text-blue-500"
+                                    data-i18n="footer_subtitle08">Gizlilik Politikası</div>
+                                <div class="duration-300 cursor-pointer hover:text-blue-500"
+                                    data-i18n="footer_subtitle09">Kullanıcı Sözleşmesi</div>
+                                <div class="duration-300 cursor-pointer hover:text-blue-500"
+                                    data-i18n="footer_subtitle10">Satış Sözleşmesi</div>
+                                <div class="duration-300 cursor-pointer hover:text-blue-500"
+                                    data-i18n="footer_subtitle11">İptal & İade Koşulları
+                                </div>
+                                <div class="duration-300 cursor-pointer hover:text-blue-500">KVKK</div>
+                                <div class="duration-300 cursor-pointer hover:text-blue-500"
+                                    data-i18n="footer_subtitle12">Çerez Politikası</div>
+                            </div>
+                        </div>
+                        <div class="lg:w-2/12">
+                            <div class="font-semibold underline">Blog</div>
+                            <div class="flex flex-col gap-3 mt-6 text-xs text-gray-600 dark:text-gray-400">
+                                <div class="duration-300 cursor-pointer hover:text-blue-500"
+                                    data-i18n="footer_subtitle13">Başarı Hikayeleri</div>
+                                <div class="duration-300 cursor-pointer hover:text-blue-500"
+                                    data-i18n="footer_subtitle14">E- Ticaret Rehberleri</div>
+                                <div class="duration-300 cursor-pointer hover:text-blue-500"
+                                    data-i18n="footer_subtitle15">E- Ticaret Trendleri</div>
+                                <div class="duration-300 cursor-pointer hover:text-blue-500"
+                                    data-i18n="footer_subtitle16">Hyper Güncellemeler</div>
+                                <div class="duration-300 cursor-pointer hover:text-blue-500"
+                                    data-i18n="footer_subtitle17">Dropshipping ve Tedarik
+                                </div>
+                                <div class="duration-300 cursor-pointer hover:text-blue-500"
+                                    data-i18n="footer_subtitle18">Seo ve Pazarlama</div>
+                                <div class="duration-300 cursor-pointer hover:text-blue-500"
+                                    data-i18n="footer_subtitle19">Ödeme ve Güvenlik</div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="my-6 opacity-25">
+                    <div class="">
+                        <div class="font-semibold underline" data-i18n="footer_title03">İletişim</div>
+                        <div class="flex flex-col w-full lg:flex-row">
+                            <div class="lg:w-2/12">
+
+                                <div class="flex flex-col gap-3 mt-6 text-xs text-gray-600 dark:text-gray-400">
+                                    <div class="">
+                                        <div class="font-semibold" data-i18n="footer_subtitle20">Vergi Dairesi /
+                                            Numarası</div>
+                                        <div>OSMANGAZİ / 4640660195</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="lg:w-2/12">
+                                <div class="flex flex-col gap-3 mt-6 text-xs text-gray-600 dark:text-gray-400">
+                                    <div class="">
+                                        <div class="font-semibold" data-i18n="footer_subtitle21">Unvan</div>
+                                        <div>Hyper Teknoloji Ltd. Şti.</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="lg:w-2/12">
+                                <div class="flex flex-col w-full gap-3 mt-6 text-xs text-gray-600 dark:text-gray-400">
+                                    <div class="w-2/4">
+                                        <div class="font-semibold">Adres</div>
+                                        <div>Emek Zekai Gümüşdiş Mahallesi Sanayi Caddesi no:612 / 12 Osmangazi/BURSA
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="lg:w-2/12">
+                                <div class="flex flex-col gap-3 mt-6 text-xs text-gray-600 dark:text-gray-400">
+                                    <div class="">
+                                        <div class="font-semibold" data-i18n="footer_subtitle22">Müşteri Temsilcisi
+                                        </div>
+                                        <div>+90 532 423 66 30
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="lg:w-2/12">
+                                <ul class="flex flex-row gap-2 text-[2.5rem] mt-6 text-[#006cd1] ">
+                                    <li>
+                                        <a href="https://www.linkedin.com/company/hyper-teknoloji" target="_blank"
+                                            class="w-10 h-10 bg-white dark:bg-gray-800 dark:hover:text-white hover:text-[#008fd1] rounded-md flex items-center justify-center hover:-translate-y-3 duration-300 cursor-pointer">
+                                            <i class="fab fa-facebook-square "></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.instagram.com/hyperteknoloji/" target="_blank"
+                                            class="w-10 h-10 bg-white dark:bg-gray-800 dark:hover:text-white hover:text-[#008fd1] rounded-md flex items-center justify-center hover:-translate-y-3 duration-300 cursor-pointer">
+                                            <i class="fab fa-instagram"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.linkedin.com/company/hyper-teknoloji" target="_blank"
+                                            class="w-10 h-10 bg-white dark:bg-gray-800 dark:hover:text-white hover:text-[#008fd1] rounded-md flex items-center justify-center hover:-translate-y-3 duration-300 cursor-pointer">
+                                            <i class="fab fa-linkedin"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="mt-6 lg:w-2/12 lg:mt-0">
+                                <img class="w-24" src="/assets/img/home/qr.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="my-6 opacity-25">
+                    <div class="flex flex-col items-center justify-between w-full gap-4 text-xs lg:flex-row lg:gap-0">
+                        <div class="flex flex-row items-center gap-1">
+                            © 2025 <span class="font-medium">Hyper Teknoloji.</span> <span
+                                data-i18n="footer_subtitle23">Tüm Hakları Saklıdır.</span>
+                        </div>
+                        <div class="flex flex-row items-center gap-1">
+                            <span data-i18n="footer_subtitle24"> Bir </span> <span class="font-medium">Hyper Teknoloji
+                                Ltd. Şti.</span> <span data-i18n="footer_subtitle25">İştirakidir.</span>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </footer>
+
+    <script src="/assets/js/components/i18n.js"></script>
+    <script src="/assets/js/components/themeButton.js"></script>
+    <script type="module" src="/assets/js/app.js"></script>
+
+</body>
+
+</html>
